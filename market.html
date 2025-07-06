@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marketplace | AgroConnect Kenya</title>
+
+  <!-- Main styles -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body background="./images/background.jpg" no-repeat center center>
+
+  <!-- ───── Navigation ───── -->
+  <nav>
+    <div class="nav-container">
+        <img src="images/agro logo.png" alt="AgroConnect Logo" class="logo-img">  <div class="logo">AgroConnect Kenya</div>
+     
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="market.html" class="active">Market</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ───── Hero / Banner ───── -->
+  <section class="hero" style="background-image:url('assets/images/hero-market.jpg')">
+    <div class="hero-content">
+      <h1>Kenya’s Fresh Produce Marketplace</h1>
+      <p>Find verified farmers, fair prices, and fast logistics — all in one place.</p>
+      <a href="register.html" class="btn">Join as Farmer / Buyer</a>
+    </div>
+  </section>
+
+  <!-- ───── Filter Bar ───── -->
+  <section class="container">
+    <form class="form-container" style="max-width:100%;background:#e8f5e9">
+      <div style="display:flex;gap:15px;flex-wrap:wrap">
+        <input type="text" placeholder="Search produce (e.g. tomatoes, maize)" style="flex:2"/>
+        <select style="flex:1">
+          <option value="">Category</option>
+          <option>Vegetables</option>
+          <option>Fruits</option>
+          <option>Cereals & Pulses</option>
+          <option>Livestock & Dairy</option>
+        </select>
+        <select style="flex:1">
+          <option value="">County</option>
+         <option>Baringo</option>
+  <option>Bomet</option>
+  <option>Bungoma</option>
+  <option>Busia</option>
+  <option>Elgeyo-Marakwet</option>
+  <option>Embu</option>
+  <option>Garissa</option>
+  <option>Homa Bay</option>
+  <option>Isiolo</option>
+  <option>Kajiado</option>
+  <option>Kakamega</option>
+  <option>Kericho</option>
+  <option>Kiambu</option>
+  <option>Kilifi</option>
+  <option>Kirinyaga</option>
+  <option>Kisii</option>
+  <option>Kisumu</option>
+  <option>Kitui</option>
+  <option>Kwale</option>
+  <option>Laikipia</option>
+  <option>Lamu</option>
+  <option>Machakos</option>
+  <option>Makueni</option>
+  <option>Mandera</option>
+  <option>Meru</option>
+  <option>Migori</option>
+  <option>Mombasa</option>
+  <option>Murang'a</option>
+  <option>Nairobi</option>
+  <option>Nakuru</option>
+  <option>Nandi</option>
+  <option>Narok</option>
+  <option>Nyamira</option>
+  <option>Nyandarua</option>
+  <option>Nyeri</option>
+  <option>Samburu</option>
+  <option>Siaya</option>
+  <option>Taita-Taveta</option>
+  <option>Tana River</option>
+  <option>Tharaka-Nithi</option>
+  <option>Trans Nzoia</option>
+  <option>Turkana</option>
+  <option>Uasin Gishu</option>
+  <option>Vihiga</option>
+  <option>Wajir</option>
+  <option>West Pokot</option>
+        </select>
+        <button type="button" class="btn" style="flex:0 0 150px">Filter</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- ───── Product Grid ───── -->
+  <section class="container">
+    <h2 class="text-center">Featured Listings</h2>
+
+    <div class="card-grid">
+
+      <!-- Vegetables -->
+      <div class="card">
+        <img src="/images/Tomatoes.jpeg" alt="Tomatoes">
+        <div class="card-body">
+          <h3>Tomatoes</h3>
+          <p>KES 55 / kg · Kirinyaga County</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/images/cabbage.jpeg" alt="Cabbage">
+        <div class="card-body">
+          <h3>Cabbages</h3>
+          <p>KES 30 / piece · Nyandarua County</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/images/skuma.jpeg" alt="Kales">
+        <div class="card-body">
+          <h3>Kales (Sukuma Wiki)</h3>
+          <p>KES 25 / bunch · Kiambu County</p>
+        </div>
+      </div>
+
+      <!-- Fruits -->
+      <div class="card">
+        <img src="/images/Mangoes.jpeg" alt="Mangoes">
+        <div class="card-body">
+          <h3>Mangoes</h3>
+          <p>KES 60 / kg · Makueni County</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/images/Avocados.jpeg" alt="Avocados">
+        <div class="card-body">
+          <h3>Avocados (Hass)</h3>
+          <p>KES 95 / kg · Murang’a County</p>
+        </div>
+      </div>
+
+      <!-- Cereals & Pulses -->
+      <div class="card">
+        <img src="/images/maize.jpeg" alt="Maize">
+        <div class="card-body">
+          <h3>Maize (Dry)</h3>
+          <p>KES 48 / kg · Uasin Gishu County</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/images/beans.jpeg" alt="Beans">
+        <div class="card-body">
+          <h3>Rosecoco Beans</h3>
+          <p>KES 110 / kg · Bungoma County</p>
+        </div>
+      </div>
+
+      <!-- Livestock & Dairy -->
+      <div class="card">
+        <img src="/images/Fresh Milk.jpeg" alt="Milk">
+        <div class="card-body">
+          <h3>Fresh Cow Milk</h3>
+          <p>KES 55 / L · Nyeri County</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/images/Chicken Eggs.jpeg" alt="Eggs">
+        <div class="card-body">
+          <h3>Organic Eggs</h3>
+          <p>KES 380 / Tray (30) · Tharaka Nithi</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ───── Call-to-Action ───── -->
+  <section class="container" style="text-align:center">
+    <h2>Ready to Trade Directly?</h2>
+    <p>Create a free account and reach thousands of buyers and farmers across Kenya.</p>
+    <a href="register.html" class="btn">Start Trading</a>
+  </section>
+
+  <!-- ───── Footer ───── -->
+  <footer>
+    <p>&copy; 2025 AgroConnect Kenya • Connecting Farms to Markets</p>
+  </footer>
+
+</body>
+</html>

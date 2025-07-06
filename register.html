@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>User Registration | AgroConnect Kenya</title>
+  <li><a href="index.html" class="active">Go Back</a></li>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="register">
+
+  <!-- Optional Background Image -->
+  <style>
+    body.register {
+      background: url('assets/images/register-bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    .register-container {
+      max-width: 500px;
+      margin: 80px auto;
+      padding: 30px;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+
+    .register-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #2d7d3e;
+    }
+
+    .register-container form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .register-container label {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .register-container input,
+    .register-container select {
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .register-container button {
+      margin-top: 20px;
+      padding: 12px;
+      background: #2d7d3e;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .register-container button:hover {
+      background: #256b32;
+    }
+
+    .login-link {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .login-link a {
+      color: #2d7d3e;
+      text-decoration: none;
+    }
+  </style>
+
+  <!-- Registration Form -->
+  <div class="register-container">
+    <img src="images/agro logo.png" alt="AgroConnect Logo" class="logo-img">
+    <h2>Register with AgroConnect Kenya</h2>
+    <form action="register_process.php" method="POST">
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required />
+
+      <label for="location">County / Location</label>
+      <input type="text" id="location" name="location" required />
+
+      <label for="role">I am a:</label>
+      <select id="role" name="role" required>
+        <option value="">--Select--</option>
+        <option value="farmer">Farmer</option>
+        <option value="buyer">Buyer</option>
+        <option value="supplier">Supplier</option>
+        <option value="investor">Investor</option>
+      </select>
+
+      <label for="password">Create Password</label>
+      <input type="password" id="password" name="password" required />
+
+      <label for="confirm">Confirm Password</label>
+      <input type="password" id="confirm" name="confirm_password" required />
+
+      <button type="submit">Register</button>
+
+      <div class="login-link">
+        Already have an account? <a href="login.html">Login here</a>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>

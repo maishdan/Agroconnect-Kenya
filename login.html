@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <div class="logo">
+     <img src="images/agro logo.png" alt="AgroConnect Logo" class="logo-img">
+    </div>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | AgroConnect Kenya</title>
+  <li><a href="index.html" class="active">Go Back</a></li>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+<body class="login">
+
+  <!-- Background image (lighter than video for faster load) -->
+  <img src="assets/images/login-bg.jpg" alt="" class="bg-img" />
+
+  <div class="overlay"></div>
+  
+
+  <div class="auth-container">
+    <h2>Account Login</h2>
+    <form action="login_process.php" method="POST">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required />
+
+      <button type="submit" class="btn-primary w-100">Login</button>
+
+      <p class="text-center mt-2">
+        Don’t have an account?
+        <a href="register.html">Register here</a>
+      </p>
+    </form>
+  </div>
+
+</body>
+</html>
